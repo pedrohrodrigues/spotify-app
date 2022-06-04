@@ -7,16 +7,16 @@ import { Library } from './components/content/library';
 import { Search } from './components/content/search';
 
 function App() {
-  return (
-    <div className="App flex">
+    return (
+        <div className="App flex">
             <Sidebar />
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/library" element={<Library />} />
-              <Route path="/search" element={<Search />} />
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/library" element={<Library />} />
+                <Route path="/search" element={<Search />} />
             </Routes>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;
