@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import { Sidebar } from './components/sidebar/sidebar';
 import { Dashboard } from './components/content/dashboard';
-import { Route, Routes } from 'react-router-dom';
 import { Library } from './components/content/library';
 import { Search } from './components/content/search';
 
