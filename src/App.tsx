@@ -5,16 +5,20 @@ import { Sidebar } from './components/sidebar/sidebar';
 import { Dashboard } from './components/content/dashboard';
 import { Library } from './components/content/library';
 import { Search } from './components/content/search';
+import { Header } from './components/content/header';
 
 function App() {
     return (
         <div className="App flex">
             <Sidebar />
-            <Routes>
-                <Route path="/" element={<Dashboard />} />
-                <Route path="/library" element={<Library />} />
-                <Route path="/search" element={<Search />} />
-            </Routes>
+            <div className="bg-ligtherPrimary w-5/6">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/library" element={<Library />} />
+                    <Route path="/search" element={<Search />} />
+                </Routes>
+            </div>
         </div>
     );
 }
